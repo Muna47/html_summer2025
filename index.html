@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my first web page</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div class="box flex-box">
@@ -54,28 +54,40 @@
           </li>
           <!--contact-->
           <li>
-            <a href="mailto:mymunai552@gmail.com" target="contact">Google</a>
+            <a href="mailto:mymunai552@gmail.com" target="_blank">Contact</a>
           </li>
         </ul>
       </div>
       <div class="box">
-        <ol>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-        </ol>
-
-        <ul>
-          <li>DevOps</li>
-          <li>Machine Learning</li>
-        </ul>
-
-        <dl>
-          <dt>DevOps</dt>
-          <dd>
-            DevOps is a set of practices that combines software development
-          </dd>
-        </dl>
+        <!--table-->
+        <table>
+          <thead>
+            <tr>
+              <th>name</th>
+              <th>roll</th>
+              <th>sub</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>sabab</td>
+              <td rowspan="2">381</td>
+              <td>bio</td>
+            </tr>
+            <tr>
+              <td>sumu</td>
+              <td>geo</td>
+            </tr>
+            <tr>
+              <td colspan="3">mithi</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">total</td>
+            </tr>
+          </tfoot>
+        </table>
       </div>
       <div class="box">
         <ol>
