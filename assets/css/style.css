@@ -7,8 +7,8 @@
 .flex-box {
   display: flex;
   gap: 10px;
-  flex-wrap: nowrap;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 table {
   border-collapse: collapse;
@@ -22,4 +22,8 @@ td {
 }
 th {
   background-color: antiquewhite;
+}
+.thumbnail {
+  height: 200px;
+  width: 400px;
 }
