@@ -1,7 +1,14 @@
+:root {
+  --background-color: solid white;
+  --text-color: solid black;
+  --box-padding: 50px;
+  --box-padding-radius: 10px;
+}
+
 .box {
   border: 1px solid black;
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: var(--box-padding-radius);
+  padding: var(--box-padding);
 }
 
 .flex-box {
@@ -9,6 +16,13 @@
   gap: 10px;
   flex-wrap: wrap;
   align-items: flex-start;
+}
+@media (max-width: 375px) {
+  .flex-box {
+    flex-direction: column;
+    /* width: 100%; */
+    padding: var(--box-padding-small);
+  }
 }
 table {
   border-collapse: collapse;
@@ -26,4 +40,19 @@ th {
 .thumbnail {
   height: 200px;
   width: 400px;
+  filter: grayscale(90%);
+}
+
+section > ol:first-child > li:nth-child(even) {
+  color: chartreuse;
+}
+
+input[type="text"] {
+  border: 5px solid gold;
+  border-radius: 10px;
+  padding: 1px;
+}
+ol[test-id="ol1"] {
+  color: brown;
+  text-transform: uppercase;
 }
